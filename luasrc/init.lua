@@ -1,5 +1,3 @@
-require 'torch'
-
 -- Force to include randomkit once only, relying on the global state
 -- NB: it is ugly to rely on the fact that we pollute the global
 -- namespace, yet I do not see a better way to avoid 
@@ -116,6 +114,7 @@ function randomkit._check1DParams(K, defaultResultType, ...)
     return result, params
 end
 
+require 'torch'
 torch.include("randomkit", "nonC.lua")
 torch.include("randomkit", "wrapC.lua")
 
