@@ -2,8 +2,7 @@ package = 'randomkit'
 version = '0-1'
 
 source = {
-   url = 'git://github.com/deepmind/torch-randomkit.git',
-   branch = 'v0.1'
+   url = 'git://github.com/alexbw/torch-randomkit.git'
 }
 
 description = {
